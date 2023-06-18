@@ -7,13 +7,13 @@ export function getBooksAPI() {
   
   export function addBookAPI(book) {
     try {
-      return fetch("https://crud-backend-03vc.onrender.com/books"), {
+      return fetch("https://crud-backend-03vc.onrender.com/books", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(book),
-      }
+      })
         .then((res) => res.json())
         .then((data) => data);
     } catch (err) {
