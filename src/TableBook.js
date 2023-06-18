@@ -8,8 +8,8 @@ function TableBook(props) {
       <table>
         <tbody>
           <tr>
-            <td>Title</td>
-            <td>Description</td>
+            <td><h1>Title:</h1></td>
+            <td><h1>Description:</h1></td>
           </tr>
           {books.map((book) => {
             return (
