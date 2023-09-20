@@ -1,5 +1,4 @@
-
-
+import './CreateBook.css';
 import React, { useState } from "react";
 
 function CreateBook(props) {
@@ -22,29 +21,33 @@ function CreateBook(props) {
     onCreate(book);
   };
   return (
-   
+   <div className='title'>
     <form onSubmit={onSubmit}>
-       <h1>My First FSD App</h1>
+       
       <label>
-      <p  style={{color:"blue"}}>Title:</p>
-        <input
+      <p className="title" style={{color:"black"}}>Title
+        <input 
           name="title"
           type="text"
           value={book.title}
           onChange={(e) => handleChange(e)}
         ></input>
+        </p>
       </label>
+    
       <label>
-        <p  style={{color:"blue"}}>Description:</p>
+        <p  style={{color:"black"}}>Description
         <input
           name="description"
           type="text"
           value={book.description}
           onChange={(e) => handleChange(e)}
         ></input>
-      </label><br></br><br></br>
-      <input type="submit" value="Submit" />
+        </p>
+      </label>
+      <input className='input' type="submit" value="Submit" />
     </form>
+    </div>
   );
 }
 

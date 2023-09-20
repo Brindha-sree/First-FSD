@@ -1,21 +1,24 @@
-
+import './TableBook.css'
 import React, { useState } from "react";
 
 function TableBook(props) {
   const { books, onDelete, onUpdate } = props;
   return (
     <div>
+      <h1>AddBooks</h1>
       <table>
-        <tbody>
+        <tbody >
           <tr>
-            <td><h1>Title:</h1></td>
-            <td><h1>Description:</h1></td>
+            <td><h1 className='title'>Title</h1></td>
+            <td><h1 className='des'>Description</h1></td>
+           <td><h1 className='des'>Details</h1></td>
+           <td><h1 className='des'>Actions</h1></td>
           </tr>
           {books.map((book) => {
             return (
               <tr key={book._id}>
                 <td>{book.title}</td>
-                {/* <td>{book.description}</td> */}
+                 <td>{book.description}</td> 
                 <td>
                   <DescriptionForm
                     book={book}
@@ -23,8 +26,10 @@ function TableBook(props) {
                   ></DescriptionForm>
                 </td>
                 <td>
-                  <button onClick={() => onDelete(book._id)}>Delete</button>
+                  <button className='button'onClick={() => onDelete(book._id)}>Delete</button>
                 </td>
+
+                
               </tr>
             );
           })}
@@ -44,7 +49,7 @@ function DescriptionForm(props) {
   };
   return (
     <div>
-      <td>
+      <td className='inputs'>
         <input
           type="text"
           value={description}
@@ -52,7 +57,7 @@ function DescriptionForm(props) {
         ></input>
       </td>
       <td>
-        <button
+        <button className='button'
           onClick={() => onUpdate({ _id: book._id, description: description })}
         >
           Update

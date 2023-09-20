@@ -1,0 +1,11 @@
+
+.title{
+    text-align: center;
+    font-size: 30px;
+}
+
+.input{
+    width:100px;
+    margin-left:10px;
+    background-color:  rgb(187, 187, 220);;
+}

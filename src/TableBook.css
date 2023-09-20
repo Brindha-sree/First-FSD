@@ -1,0 +1,42 @@
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #0a0909;
+    justify-content: center; 
+   
+  }
+  
+  /* Style for table header (th) */
+  th {
+    background-color: #726868;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* Style for table rows (td) */
+  td {
+    padding: 8px;
+    border: 1px solid #100e0e; /* Add border to table cells */
+  }
+  
+  /* Style for the input field in DescriptionForm */
+  .inputs  {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd; /* Add border to input field */
+  }
+  
+  /* Style for buttons */
+  .button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px; 
+    cursor: pointer;
+  }
+  
+  /* Additional styles can be added as needed */
+  
