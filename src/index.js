@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
 import Navbar from './Navbar'; 
 import Home from './Home'; 
-import TableBook from './TableBook';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,7 +20,7 @@ root.render(
           
            <Route path="createbook" element={<App/>} exact />  
 
-           <Route path="tablebook" element={<TableBook/>} exact />
+           
       </Routes>
     </Router>
     
